@@ -27,6 +27,8 @@
 //         console.log(i);
 //     }
 
+//I AM RUNNING INFINITE LOOPS LEFT N RIGHT. I AM HAVING TROUBLE SEEING THESE AND NEED HELP PRACTICING THEM.
+
 // // Create a loop that logs the ODD numbers from 99-0 (descending)
 // for(let i=99; i>=0; i--){
 //     //     console.log(i);
