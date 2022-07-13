@@ -1,25 +1,38 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: beige;
 }
 
-nav {
-    text-align: center;
-}
 h1{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+    padding: 1em;
+}
+img{
+    display:inline-block;
+    padding: 10em;
+    width: 50%;
+
 }
 h3{
-    color:red;
+    color:rgba(255, 0, 0, 0.278);
+    padding: 1em;
+}
+nav {
+    text-align: center;
 }
 
 .links{
     list-style:none;
     display: inline-block;
     display: flex;
+    padding: 50px 50px 20px 400px;
 
 }
 h2 {
     text-align: center;
 }
-    
+
+li{
+    padding:1em;
+}
