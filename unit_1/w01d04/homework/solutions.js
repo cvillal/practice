@@ -35,3 +35,27 @@
 // // }
 // // //
 // sumArray.reduce(sumArray(1, 2, 3, 4, 5), 1)
+
+//looked up .reduce() definition on w3 attempted to apply, unsure how to proceed. its all a big mess HELP
+
+//Prime Numbers:
+// Step 1
+
+// const checkPrime = (checks if number is prime) => {
+//     if (i=0; i<=squareroot; i++) prime # {
+//     console.log ('true')
+//     } else { 
+//     console.log ('false')
+//     }
+// }
+// Step 2
+
+// const printPrimes = () =>{
+//     if (i=0; i<=97; i++){
+//         console.log(all prime numbers up to 97)
+//     }
+
+// }
+
+//id like to think this is my pseudo code...unsure how to go deeper into actually making it function pun intended
+
