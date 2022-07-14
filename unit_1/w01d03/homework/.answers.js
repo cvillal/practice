@@ -76,7 +76,7 @@
 ////////////////////////////////
 // Methods, Revisited:
 
-const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+// const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
 // console.log(favMovies.indexOf('Titanic'))
 
@@ -141,7 +141,7 @@ const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle'
 //     console.log("Love me, pet me! HSSSSS!")
 // }  //not sure this is correct...
 
-let catTalk = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
+// let catTalk = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
 
 //let meow = 0 //do i even need this?
 
@@ -156,7 +156,23 @@ let catTalk = ["...human...why you taking pictures of me?...", "...the catnip ma
 
 
 ////////////////////////////////
-//  Find the Median
+//  Find the Median:
+
+//const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+//console.log(nums.sort())
+
+// console.log(nums.length) //25
+// console.log(nums[Math.floor(25/2)]) //19??? 25/2=12.5 round down its 12 then i search for the 12th number and thats 15
+//NOT SURE HOW TO REACH THAT IN console, loop array talk HELP
+
+// console.log(nums[19])
+// console.log(nums.median())
+// Math.floor(nums.length/2)
+// Expected output:
+// => 15
+
+
 ////////////////////////////////
 
 
