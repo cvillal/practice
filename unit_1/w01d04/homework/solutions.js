@@ -59,3 +59,16 @@
 
 //id like to think this is my pseudo code...unsure how to go deeper into actually making it function pun intended
 
+// const randomMove = ()=>{
+//     returns (.randomly chosen move)
+// }
+
+// const rockPaperScissors = ([userMove, computerMove])=>{
+//     if (one choice beats the other){
+//         console.log(who won)
+//     }
+
+// }
+
+//once again my attempted pseudocode...no clue what to actually input to make them work or if theyre even set up properly. HELP
+
