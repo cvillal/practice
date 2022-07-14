@@ -56,17 +56,20 @@
 // 4.
 // wolfy[0]="Gameboy"
 // console.log (wolfy)
-
-
-
-
-
-
 ////////////////////////////////
 
 
 ////////////////////////////////
 // Yell at the Ninja Turtles
+
+// const NinjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
+
+// for (let i = 0; i<= NinjaTurtles.length; i++){
+//     console.log((NinjaTurtles[i]).toUpperCase())
+// }
+
+
+//found for of loop on w3 schoool and some guidance on stackoverflow where they suggested looping through each element and making it upper case. i wish i had recorded my excitement face when it worked and printed all in UPPERCASE!!!!HOOOORAAAYYYYYY!!!!
 ////////////////////////////////
 
 
