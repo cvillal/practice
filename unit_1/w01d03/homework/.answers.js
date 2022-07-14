@@ -120,9 +120,9 @@ const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle'
 
 ////////////////////////////////
 // Where is Waldo:
-const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
-                    ["Lucinda", "Jacc", "Neff", "Snoop"],
-                    ["Petunia", ["Baked Goods", "Waldo"]]];
+// const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+//                     ["Lucinda", "Jacc", "Neff", "Snoop"],
+//                     ["Petunia", ["Baked Goods", "Waldo"]]];
 
 // whereIsWaldo.splice(1,1,)
 // console.log(whereIsWaldo)
@@ -133,12 +133,25 @@ const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
 //How do I taget the "neff" inside that array? do I have to splice the original array into several and then change it? but then thats no longer whereIsWaldo
 
 // console.log(whereIsWaldo[3][1][1])
-
 ////////////////////////////////
 
-
 ////////////////////////////////
-//  Excited Kitten
+//  Excited Kitten:
+// for (let i=1; i<=20; i++){
+//     console.log("Love me, pet me! HSSSSS!")
+// }  //not sure this is correct...
+
+let catTalk = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
+
+//let meow = 0 //do i even need this?
+
+// for (let i=0; i<catTalk.length; i++){
+//     if(i%2 ===0){
+//         console.log(Math.floor(Math.random()))
+//     }
+// }
+
+//this worked but it printed 0 instead of a string of words...unsure what to do
 ////////////////////////////////
 
 
