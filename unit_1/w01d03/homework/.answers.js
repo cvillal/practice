@@ -21,17 +21,27 @@
 
 // for (let i=1; i<=100; i++){
 //     if (i % 3 === 0){
-//     console.log(Fizz)
+//     console.log("Fizz")
 //     }
 //     if (i % 5 === 0){
-//         console.log(Buzz)
+//         console.log("Buzz")
 //     }
 //     if (i % 3 ===0 && i % 5 === 0){
-//         console.log(FizzBuzz)
+//         console.log("FizzBuzz")
 //     }
 // }
+//correct way: do most specific one first.
+// for (let i=1; i<=100; i++){
+//     if (i % 3 === 0 && i % 5 === 0){
+//         console.log("FizzBuzz")
+//     } else if (i % 3 === 0){
+//         console.log("Fizz")
+//         } else if (i % 5 === 0){
+//             console.log("Buzz")
+//         }
+//     }
 
-//UNSURE WHAT TO DO...RUNNING IT SAYS I NEED TO DEFINE FUZZ BUT I DONT KNOW WHAT TO DEFINE IT AS
+//UNSURE WHAT TO DO...RUNNING IT SAYS I NEED TO DEFINE FUZZ BUT I DONT KNOW WHAT TO DEFINE IT AS -- was missing "" around fuzz
 
 ////////////////////////////////
 
@@ -47,9 +57,16 @@
 // 1.
 // plantee [2] =5001
 // console.log(plantee)
+// //a more dynamic way is :
+// plantee [2] +=1
+// console.log(plantee[2])
+
 // 2.
-// wolfy [3] = "Gotham City"
+// wolfy[3] = "Gotham City"
 // console.log(wolfy)
+// //or:
+//.splice or .push n pull
+
 // 3.
 // dart.push("Hawkins")
 // console.log(dart)
@@ -67,6 +84,16 @@
 // for (let i = 0; i<= NinjaTurtles.length; i++){
 //     console.log((NinjaTurtles[i]).toUpperCase())
 // }
+
+// //or
+// for (names of NinjaTurtles){
+//     console.log(names.toUpperCase())
+// }
+
+//for fun...REVERSE IT:
+
+
+
 
 
 //found for of loop on w3 schoool and some guidance on stackoverflow where they suggested looping through each element and making it upper case. i wish i had recorded my excitement face when it worked and printed all in UPPERCASE!!!!HOOOORAAAYYYYYY!!!!
@@ -127,10 +154,19 @@
 // whereIsWaldo.splice(1,1,)
 // console.log(whereIsWaldo)
 
-// whereIsWaldo.splice(2,1,"No One")
-// console.log(whereIsWaldo)
 
-//How do I taget the "neff" inside that array? do I have to splice the original array into several and then change it? but then thats no longer whereIsWaldo
+// How do I taget the "neff" inside that array? do I have to splice the original array into several and then change it? but then thats no longer whereIsWaldo
+
+// whereIsWaldo[2].splice(2,1,"No One")
+// console.log(whereIsWaldo)
+// console.log(whereIsWaldo[2])
+
+
+// whereIsWaldo.splice(
+
+//maybe:
+// const ljns = whereIsWaldo[2]
+// console.log(ljns)
 
 // console.log(whereIsWaldo[3][1][1])
 ////////////////////////////////
@@ -143,11 +179,20 @@
 
 // let catTalk = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
 
-//let meow = 0 //do i even need this?
+// let meow = 0 //do i even need this?
 
 // for (let i=0; i<catTalk.length; i++){
 //     if(i%2 ===0){
-//         console.log(Math.floor(Math.random()))
+//         console.log(Math.floor(Math.random()*3))
+//     }
+// }
+
+//combine the stuff to make just one loop:
+
+// for (let i = 0; i < 20; i++){
+//     console.log("love me, pet me! HSSSSS!")
+//     if (i % 2 === 0){
+//         console.log(catTalk[Math.floor(Math.random(*3))])
 //     }
 // }
 
