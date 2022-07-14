@@ -60,7 +60,7 @@
 
 
 ////////////////////////////////
-// Yell at the Ninja Turtles
+// Yell at the Ninja Turtles:
 
 // const NinjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
 
@@ -74,7 +74,48 @@
 
 
 ////////////////////////////////
-// Methods, Revisited
+// Methods, Revisited:
+
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+
+// console.log(favMovies.indexOf('Titanic'))
+
+// console.log(favMovies.sort())
+// favMovies.pop()
+
+// console.log(favMovies)
+// or
+// console.log(favMovies.pop())
+// console.log(favMovies)
+
+// favMovies.push("Guardians of the Galaxy")
+// console.log(favMovies)
+
+// favMovies.reverse()
+// console.log(favMovies)
+
+// favMovies.shift()
+// console.log(favMovies)
+
+// favMovies.unshift()
+// console.log(favMovies)
+
+//console.log(favMovies.indexOf('Django Unchained')) //3
+
+// favMovies.splice(3,1,"Avatar")
+// console.log(favMovies)
+
+//console.log(favMovies.length) //19
+//console.log(favMovies[Math.floor(19/2)]) //harry potter
+//console.log(favMovies.indexOf('Harry Potter')) //9
+
+//console.log(favMovies.slice(9,19))
+
+// let var = favMovies.slice(9,19)
+// console.log(var)
+//not sure what to do here, why is it not defining var? HELP
+
+//undefined? not sure what is being asked in this question
 ////////////////////////////////
 
 
