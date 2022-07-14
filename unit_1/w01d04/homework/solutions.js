@@ -19,5 +19,19 @@
 
 //unsure where to start. unsure how to set it up and what to put where. am i just looking for true/false? or that the function works and returns the words reversed adn w a capital letter upfront?
 
+// Sum Array:
+
+// const sumArray = [1, 2, 3, 4, 5] => {
+//      return 1+2+3+4+5
+// }     
+// // //     for (let i=0; i<=5; i++){
+// // //         if () {
+// // //             console.log();
+// // //         }
+
+// // // }
 
 
+// // }
+// // //
+// sumArray.reduce(sumArray(1, 2, 3, 4, 5), 1)
