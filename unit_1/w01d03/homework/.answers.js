@@ -118,9 +118,22 @@ const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle'
 //undefined? not sure what is being asked in this question
 ////////////////////////////////
 
-
 ////////////////////////////////
-// Where is Waldo
+// Where is Waldo:
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
+
+// whereIsWaldo.splice(1,1,)
+// console.log(whereIsWaldo)
+
+// whereIsWaldo.splice(2,1,"No One")
+// console.log(whereIsWaldo)
+
+//How do I taget the "neff" inside that array? do I have to splice the original array into several and then change it? but then thats no longer whereIsWaldo
+
+// console.log(whereIsWaldo[3][1][1])
+
 ////////////////////////////////
 
 
