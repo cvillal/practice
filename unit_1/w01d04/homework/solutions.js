@@ -8,33 +8,39 @@
 // console.log prints the argument.
 
 //Palindrome:
-// const checkPalindrome=("") {
-//     if(""===palindrome){
-//         console.log("".split().reverse().join())
-//     }
-//     console.log (checkPalindrome("");
-//     )
 
+// const checkPalindrome = (text) => {
+// const tXt = text.split("")    
+// console.log(tXt)
+//     if(text === tXt.reverse("").join("")){
+//         return true
+//     } else {
+//         return false
+//     }
 // }
+
+// console.log(checkPalindrome("madam"))
+
+
+
+
 
 //unsure where to start. unsure how to set it up and what to put where. am i just looking for true/false? or that the function works and returns the words reversed adn w a capital letter upfront?
 
 // Sum Array:
 
-// const sumArray = [1, 2, 3, 4, 5] => {
-//      return 1+2+3+4+5
-// }     
-// // //     for (let i=0; i<=5; i++){
-// // //         if () {
-// // //             console.log();
-// // //         }
+// const Array = [1, 2, 3, 4, 5] 
 
-// // // }
+// const sumArray= (Array) => {
+// let sum = 0
+//     for (let i=0; i<= Array.length; i++){
+//         sum += Array[i]
+//         }
+//         return sum 
+// }
+// console.log(sumArray([1, 2, 3, 4, 5]))
 
-
-// // }
-// // //
-// sumArray.reduce(sumArray(1, 2, 3, 4, 5), 1)
+// sumArray.reduce(sumArray(1, 2, 3, 4, 5), 0)
 
 //looked up .reduce() definition on w3 attempted to apply, unsure how to proceed. its all a big mess HELP
 
