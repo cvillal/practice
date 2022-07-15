@@ -58,18 +58,38 @@
 //     console.log ('false')
 //     }
 // }
+// ---------------------
+// const checkPrime (num) => {
+//     for (let i=2; i<=Math.sqrt(num); i++){
+//         if (num % i === 0){
+//             return false;
+//         }else{
+        
+//         }
+//     }
+// }
+// -----------------
+// const checkPrime = (num) => {
+// for (let i=2; i<num; i++){
+//     if(num % i ===0){
+//     return false
+// }
+// }return true
+// }
+// -------------------------    
 // Step 2
 
-// const printPrimes = () =>{
+// const printPrimes = (limit) =>{
 //     if (i=0; i<=97; i++){
 //         console.log(all prime numbers up to 97)
 //     }
 
 // }
+// printPrimes(97)
 
 //id like to think this is my pseudo code...unsure how to go deeper into actually making it function pun intended
 
-// ^^this seems to have worked!:
+// // ^^this seems to have worked!:
 // choices=["rock", "paper", "scissors"]
 // const randomMove = (choices)=>{
 //     return Math.floor(Math.random()*choices.length)
@@ -77,9 +97,19 @@
    
 // }
 // console.log(Math.floor(Math.random()*choices.length))
-// ^^
+// // ^^
+
+// const randomMove = () =>{
+//     return randomChoice = choices [Math.floor(Math.random()*choices.length)]
+// }
+
+// console.log(randomMove())
 
 //const randomMove =Math.floor(Math.random()*choices.length) //looked at the lapis papyrus scalpellus for reference
+
+// choices=["rock", "paper", "scissors"]
+// let computerMove = randomMove()
+// let userMove = randomMove()
 
 // const rockPaperScissors = ([userMove, computerMove])=>{
 //     if (userMove(randomMove) && computerMove(randomMove))
@@ -91,10 +121,20 @@
 // }
 // console.log(randomMove())
 
-// )
-// rock>scissors
-// scissors>paper
-// paper>rock
+// console.log(rockPaperScissors())
 
-//first part seems to have worked. I am unsure how to now make this second part utilize that first one for user/computer to make their choice and print result.I attempted my "pseudocode"...no clue what to actually input to make them work or if theyre even set up properly. HELP
+// // )
+// // rock>scissors
+// // scissors>paper
+// // paper>rock
+
+
+// if (computerMove === userMove){
+//     return "its a tie";
+// }else if (computerMove ===0 && userMove ===1){
+//     return ""
+// }
+// }
+
+// first part seems to have worked. I am unsure how to now make this second part utilize that first one for user/computer to make their choice and print result.I attempted my "pseudocode"...no clue what to actually input to make them work or if theyre even set up properly. HELP
 
