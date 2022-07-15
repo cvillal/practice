@@ -31,24 +31,28 @@
 
 // const Array = [1, 2, 3, 4, 5] 
 
+
 // const sumArray= (Array) => {
 // let sum = 0
 //     for (let i=0; i<= Array.length; i++){
 //         sum += Array[i]
 //         }
-//         return sum 
+//         return sum     
 // }
-// console.log(sumArray([1, 2, 3, 4, 5]))
+// // console.log(sumArray([1, 2, 3, 4, 5]))
+// sumArray(Array)
+// console.log(sum)
 
 // sumArray.reduce(sumArray(1, 2, 3, 4, 5), 0)
 
+//unsure of scope/order
 //looked up .reduce() definition on w3 attempted to apply, unsure how to proceed. its all a big mess HELP
 
 //Prime Numbers:
 // Step 1
 
-// const checkPrime = (checks if number is prime) => {
-//     if (i=0; i<=squareroot; i++) prime # {
+// const checkPrime = ("checks if number is prime") => {
+//     if (i=0; i<=sqrt(97); i++) {
 //     console.log ('true')
 //     } else { 
 //     console.log ('false')
@@ -65,16 +69,32 @@
 
 //id like to think this is my pseudo code...unsure how to go deeper into actually making it function pun intended
 
-// const randomMove = ()=>{
-//     returns (.randomly chosen move)
+// ^^this seems to have worked!:
+// choices=["rock", "paper", "scissors"]
+// const randomMove = (choices)=>{
+//     return Math.floor(Math.random()*choices.length)
+//     //returns (.randomly chosen move)
+   
 // }
+// console.log(Math.floor(Math.random()*choices.length))
+// ^^
+
+//const randomMove =Math.floor(Math.random()*choices.length) //looked at the lapis papyrus scalpellus for reference
 
 // const rockPaperScissors = ([userMove, computerMove])=>{
-//     if (one choice beats the other){
+//     if (userMove(randomMove) && computerMove(randomMove))
+//         return 
+//     one choice beats the other){
 //         console.log(who won)
 //     }
 
 // }
+// console.log(randomMove())
 
-//once again my attempted pseudocode...no clue what to actually input to make them work or if theyre even set up properly. HELP
+// )
+// rock>scissors
+// scissors>paper
+// paper>rock
+
+//first part seems to have worked. I am unsure how to now make this second part utilize that first one for user/computer to make their choice and print result.I attempted my "pseudocode"...no clue what to actually input to make them work or if theyre even set up properly. HELP
 
