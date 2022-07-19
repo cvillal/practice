@@ -40,3 +40,26 @@
 //PART2:Hero vs Goblin
 
 
+const hero ={
+    name: "Hercules",
+    hitPoints: 50,
+    attack: 10
+}
+
+const goblin ={
+    name: "Monster",
+    hitPoints: 20,
+    attack: 5
+}
+
+// console.log(hero.hitPoints -= goblin.attack) 
+
+// console.log(goblin.hitPoints-=hero.attack)
+
+const attackEnemy = (enemy) => {
+    while (hero.hitpoints>0 && goblin.hitpoints>0){
+    
+    }
+console.log()
+
+//NEED HELP UNDERSTANDING HOW TO MAKE A BATTLE GAME WORK. what does it mean the methods?  Not sure what the loop should look like for this >>HELP!!!<<
