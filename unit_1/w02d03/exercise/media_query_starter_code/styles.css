@@ -1,3 +1,40 @@
 body {
-	background: #eeeeee;
+	background: rgb(231, 39, 39);
+	
 }
+
+
+@media (min-width: 500px) {
+	body {
+		border-radius: 20px;
+		border-color: black;
+		background:blue;
+	}
+
+	.box1{
+		border-radius: 20px;
+		border: 2px solid black;
+		
+	}
+
+.box2{
+	border-radius: 20px;
+	border: 2px solid black;
+	
+}
+.box3{
+	border-radius: 20px;
+	border: 2px solid black;
+		
+}
+}
+	/* .box{
+
+	}
+	body{
+		background: white;
+		color: black;
+		border-radius: 20%;
+		border-color: black;
+	}
+} */
