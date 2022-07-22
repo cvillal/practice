@@ -6,7 +6,11 @@ let $name= $('<h2>')
 let $house= $('<h3>')
 let $pet= $('<h4>')
 let $wand= $('<h4>')
+
 let $trunk= $('<ul>')
+let $li2 = $('<li>').text('invisibility cloack').attr('class','secret').append($trunk)
+
+
 let $yearfour= $('<h5>')
 let $classes= $('<table>')
 let $thead= $('<thead>')
@@ -14,12 +18,15 @@ let $header=$('<th>')
 let $header2=$('<th>')
 let $trow= $('<tr>')
 let $tdata=$('<td>')
+
+
 //change
 $h1.text('Welcome to Hogwarts!')
 $name.text('Carolina')
 $house.text('Hufflepuff')
 $pet.addClass('Owl').text('Chicken')
 $wand.text('Holly Wand with Unicorn Hair Core')
+
 
 $trunk.attr('storage','trunk')
 $trunk.html('<li>Butter Beer</li>','<li>Invisibility Cloak</li>','<li>Magic Map</li>','<li>Time Turner</li>','<li>Leash</li>',"<li>Bertie Bott's Every Flavor[Jelly]Beans</li>")
@@ -28,6 +35,7 @@ $yearfour.text('Spring 2017')
 // $headertext('Day')
 $header.eq(1).children(0).text('Classes')
 // $classes
+
 $wand.css('color','indigo')
 
 
@@ -40,7 +48,9 @@ $container.append($name)
 $container.append($house)
 $container.append($pet)
 $container.append($wand)
+
 $container.append($trunk)
+
 $container.append($yearfour)
 $yearfour.append($classes)
 $classes.append($thead)
@@ -59,7 +69,9 @@ $pet.appendTo($house)
 
 $trunk.text('belongings')
 
-$trunk.hide('slow').delay(2000)//unsure if that right looks the same to me
+$trunk.hide('slow').delay('2000')//unsure if that right looks the same to me
 
 $trunk.show('slow')
+
+
 });
