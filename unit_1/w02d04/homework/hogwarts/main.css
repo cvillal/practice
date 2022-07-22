@@ -2,3 +2,11 @@ body {background-color: #F8F7FF}/*or any color of your choosing*/
 .owl{
     font-family: fantasy;
 }
+
+.secret{
+    opacity: .5;
+}
+
+li{
+    list-style: none;
+}
