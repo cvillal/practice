@@ -1,5 +1,12 @@
-if (typeof jQuery == 'undefined'){
-    console.log('oops! I still have to link my jQuery properly!');
-  } else {console.log('I did it! I linked jQuery and this js file!')};
-  
-  
+$(() => {
+//create
+let $container= $('#container')
+let $h1= $('<h1>')
+//change
+$h1.text('Welcome to Hogwarts!')
+// console.log($container)
+console.log($h1)
+//append
+$container.append($h1)
+
+});
