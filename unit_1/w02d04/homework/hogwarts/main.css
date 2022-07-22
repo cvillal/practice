@@ -10,3 +10,12 @@ body {background-color: #F8F7FF}/*or any color of your choosing*/
 li{
     list-style: none;
 }
+
+table{
+    display: table;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    align-items: center;
+
+}
