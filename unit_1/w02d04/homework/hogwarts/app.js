@@ -28,6 +28,8 @@ $yearfour.text('Spring 2017')
 // $headertext('Day')
 $header.eq(1).children(0).text('Classes')
 // $classes
+$wand.css('color','indigo')
+
 
 // console.log($trunk)
 // console.log($container)
@@ -44,6 +46,15 @@ $yearfour.append($classes)
 $classes.append($thead)
 $thead.append($header).append($header)
 
+$wand.remove()
+$("li:first-child").remove()
+$('h4:last-of-type').append($wand)
+$wand.text('New Unicorn Hair Wand')
+$pet.remove()
+$pet.appendTo($yearfour)
 // console.log($thead)
+
+$pet.remove()
+$pet.appendTo($house)
 
 });
