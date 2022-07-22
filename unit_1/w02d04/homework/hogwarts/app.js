@@ -57,4 +57,9 @@ $pet.appendTo($yearfour)
 $pet.remove()
 $pet.appendTo($house)
 
+$trunk.text('belongings')
+
+$trunk.hide('slow').delay(2000)//unsure if that right looks the same to me
+
+$trunk.show('slow')
 });
