@@ -58,12 +58,8 @@ $(() => {
   }
   }
   middleEarthLands();
-//   $('#middle-earth').append(middleEarthLands()) //unsure what i append -_-
-// }
-  // console.log(middleEarthLands())
 
-//I TRIED CONSOLE.LOG BUT NOTHING PRINTED. NOTHING SHOWED UP ATTACHED TO THE SECTION -_- :( 
-
+  //should look like this
 // {/* <section></section>
 //   <article id+lands></article>
 //     <h1>land</h1> */}
@@ -91,12 +87,17 @@ $(() => {
   // Goal: display an unordered list of hobbits in the shire (which is the first article tag on the page)
 
   // 1. create a 'ul'
-
-
+  const $shireUl= $ ('<ul>')
 
   // 2. make each hobbit an li element and append it to the 'ul' you just created
   // hint: use the given 'hobbits' array and use a for loop
+const listHobbits = () => {
+  for (let i=0; i< hobbits.length; i++){
+      const $liHobbit = $('<li>').attr('class','hobbit').text(hobbits[i]).appendTo($shireUl).appendTo('#The-Shire'); 
+  }
+}
 
+listHobbits()
   // 3. also, give each hobbit (`li`) a class of "hobbit"
 
   // 4. append the ul to the shire
