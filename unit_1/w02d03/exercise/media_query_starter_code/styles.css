@@ -3,6 +3,7 @@ body {
 	
 }
 
+<<<<<<< HEAD
 
 @media (min-width: 500px) {
 	body {
@@ -38,3 +39,11 @@ body {
 		border-color: black;
 	}
 } */
+=======
+@media (max-width: 500px) {
+	body{
+		background: black;
+		color: white
+	}
+}
+>>>>>>> cb4f6501b743535cd95d227d9c7522965e04cda1
