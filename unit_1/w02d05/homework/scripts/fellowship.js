@@ -156,11 +156,6 @@ listBaddies()
   // 2. give each of the baddies a class of "baddy"
 
 
-
-
-
-
-
   // COMMIT YOUR WORK
   // The commit message should read: "Chapter 4 complete - Made the Baddies"..
 
@@ -170,9 +165,18 @@ listBaddies()
 
 
   //   // 1. create an aside tag and append it to middle-earth below mordor
-
+const $asideTag = $('<aside>').appendTo('#middle-earth')
   //   // 2. display an unordered list of buddies in the aside
+  const $buddiesUl = $('<ul>')
+$buddiesUl.appendTo($asideTag)
 
+  const listBuddies = () => {
+    for (let i=0; i< buddies.length; i++){
+        const $liBuddies = $('<li>').attr('class','buddy').text(buddies[i]).appendTo($buddiesUl); 
+    }
+  }
+  
+  listBuddies()
 
   //   // 3. give each of the buddies a class of "buddy"
 
