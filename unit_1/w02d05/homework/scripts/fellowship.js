@@ -88,12 +88,13 @@ $(() => {
 
   // 1. create a 'ul'
   const $shireUl= $ ('<ul>')
-
+  const $h1Shire = $('#The-Shire')
+  $h1Shire.append($shireUl)
   // 2. make each hobbit an li element and append it to the 'ul' you just created
   // hint: use the given 'hobbits' array and use a for loop
 const listHobbits = () => {
   for (let i=0; i< hobbits.length; i++){
-      const $liHobbit = $('<li>').attr('class','hobbit').text(hobbits[i]).appendTo($shireUl).appendTo('#The-Shire'); 
+      const $liHobbit = $('<li>').attr('class','hobbit').text(hobbits[i]).appendTo($shireUl).appendTo('#The-Shire'.ul); 
   }
 }
 
@@ -139,7 +140,17 @@ $ringDiv.appendTo($frodo[0])
   // ============
 
   // 1. display an unordered list of baddies in Mordor
+const $mordorUl = $('<ul>')
+const $h1Mordor = $('#Mordor')
+$h1Mordor.append($mordorUl)
 
+const listBaddies = () => {
+  for (let i=0; i< baddies.length; i++){
+      const $liBaddie = $('<li>').attr('class','baddy').text(baddies[i]).appendTo($mordorUl).appendTo('#Mordor'.ul); 
+  }
+}
+
+listBaddies()
   // 3. remember to append the ul to Mordor
 
   // 2. give each of the baddies a class of "baddy"
