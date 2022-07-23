@@ -40,14 +40,36 @@ $(() => {
 
   // HINT: Make a console.log for each of your functions to make sure that, when you click, the correct function is being called!
 
-
-
   // 1. create a section tag with an id of middle-earth
+  const $sectionTag = $('<section>').attr('id','middle-earth')
 
   // 2. append the section to the body of the DOM.
+  $('body').append($sectionTag)
 
+  // console.log($body)
   // 3. use a for loop to iterate over the lands array that does the following:
 
+  const middleEarthLands = () => {
+  for (let i=0 ; i<lands.length; i++){
+    // console.log (lands[i])
+    const $landArticle = $('<article>').attr('id',lands[i]);
+    const $h1 = $('<h1>').text(lands[i]).appendTo($landArticle);
+   $sectionTag.append($landArticle)
+  }
+  }
+  middleEarthLands();
+//   $('#middle-earth').append(middleEarthLands()) //unsure what i append -_-
+// }
+  // console.log(middleEarthLands())
+
+//I TRIED CONSOLE.LOG BUT NOTHING PRINTED. NOTHING SHOWED UP ATTACHED TO THE SECTION -_- :( 
+
+// {/* <section></section>
+//   <article id+lands></article>
+//     <h1>land</h1> */}
+// /* <section></section>
+//   <article id+lands></article>
+//     <h1>land</h1> */}
 
   //   3a. creates an article tag (there should be one for each land when the loop is done)
 
