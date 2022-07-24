@@ -217,12 +217,17 @@ $('.buddy').eq(3).text('Aragon')
 
   //   // 1. create a new div with an id 'the-fellowship'
 
-  // 2. add an h1 with the text 'The Fellowship' to this new div
+  const $fellowshipDiv = $('<div>').attr('id', 'the-fellowship')
 
+  // 2. add an h1 with the text 'The Fellowship' to this new div
+  const $h1Fellowship = $('<h1>').text('The Fellowship')
+
+$fellowshipDiv.append($h1Fellowship).appendTo('#middle-earth')
   // 3. append the fellowship to middle-earth
 
   // 4. add the unordered lists of hobbits and buddies to 'the-fellowship'
-
+$('#Rivendell').children().eq(1).appendTo('#the-fellowship')
+$('aside').children().eq(0).appendTo('#the-fellowship')
 
   // COMMIT YOUR WORK
   // The commit message should read: "Chapter 8 complete - The Fellowship is created"
