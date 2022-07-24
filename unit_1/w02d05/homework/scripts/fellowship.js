@@ -205,7 +205,7 @@ $('#The-Shire').children().eq(1).appendTo("#Rivendell")
 
   //   // 1. change the buddy 'Strider' text node to "Aragorn"
   //      // hint: You can get a list of elements by tag name, such as 'aside'
-
+$('.buddy').eq(3).text('Aragon')
 
   // // COMMIT YOUR WORK
   // // The commit message should read: "Chapter 7 complete - Strider is changed to Aragorn"
