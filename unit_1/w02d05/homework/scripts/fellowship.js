@@ -257,6 +257,9 @@ $('aside').children().eq(0).appendTo('#the-fellowship')
   // 1. create a pop-up alert that the horn of gondor has been blown
   //when the webpage is loaded
 // html.on(DOMContentLoaded)
+
+//bottom click function was messing me up Isaac pointed out to comment them out to see it pop-up
+
   const hornOfGondor = () => {
     alert('horn of gondor has been blown');
   }
@@ -311,10 +314,13 @@ $('#gollum').appendTo('#mount-doom')
 
   // 1. remove Gollum and the Ring from the DOM
 
+$('#gollum').remove()
+
   // 2. remove all the baddies from the DOM
+$('.baddy').remove()
 
   // 3. Move all the hobbits back to the shire
-
+$('.hobbit').appendTo('#The-Shire')
   // COMMIT YOUR WORK
   // The commit message should read: "Chapter 13 complete -Gollum and the ring are gone, the baddies are done, and the hobbits are back in the shire".
 
