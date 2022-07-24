@@ -256,8 +256,21 @@ $('aside').children().eq(0).appendTo('#the-fellowship')
 
   // 1. create a pop-up alert that the horn of gondor has been blown
   //when the webpage is loaded
+// html.on(DOMContentLoaded)
+  const hornOfGondor = () => {
+    alert('horn of gondor has been blown');
+  }
+
+//   hornOfGondor.on('DOMContentLoaded') () => {
+//     alert("horn of gondor has been blown");
+//   }
+
   // 2. Boromir's been killed by the Uruk-hai! Put a linethrough on Boromir's name
+$('.buddy').eq(4).css({textDecoration: 'line-through'});
+
   // 3. Tricky: Remove the Uruk-Hai from the Baddies on the page
+$('.baddy').eq(2).remove()  
+
 
   // COMMIT YOUR WORK
   // The commit message should read: "Chapter 10 complete - horn of gandor blew and Boromir is dead"
@@ -268,7 +281,7 @@ $('aside').children().eq(0).appendTo('#the-fellowship')
 
   // 1. take Frodo and Sam out of the fellowship and move them to Mordor (they don't need to be inside a ul in Mordor)
 
-  // 2. add a div wiid of 'mount-doom' to Mordor
+  // 2. add a div with id of 'mount-doom' to Mordor
 
 
   // COMMIT YOUR WORK
@@ -314,19 +327,19 @@ $('aside').children().eq(0).appendTo('#the-fellowship')
 
   $(() => {
 
-    $('#1').on('click', makeMiddleEarth);
-    $('#2').on('click', makeHobbits);
-    $('#3').on('click', keepItSecretKeepItSafe);
-    $('#4').on('click', makeBaddies);
-    $('#5').on('click', makeBuddies);
-    $('#6').on('click', leaveTheShire);
-    $('#7').on('click', beautifulStranger);
-    $('#8').on('click', forgeTheFellowShip);
-    $('#9').on('click', theBalrog);
+    // $('#1').on('click', makeMiddleEarth);
+    // $('#2').on('click', makeHobbits);
+    // $('#3').on('click', keepItSecretKeepItSafe);
+    // $('#4').on('click', makeBaddies);
+    // $('#5').on('click', makeBuddies);
+    // $('#6').on('click', leaveTheShire);
+    // $('#7').on('click', beautifulStranger);
+    // $('#8').on('click', forgeTheFellowShip);
+    // $('#9').on('click', theBalrog);
     $('#10').on('click', hornOfGondor);
-    $('#11').on('click', itsDangerousToGoAlone);
-    $('#12').on('click', weWantsIt);
-    $('#13').on('click', thereAndBackAgain);
+    // $('#11').on('click', itsDangerousToGoAlone);
+    // $('#12').on('click', weWantsIt);
+    // $('#13').on('click', thereAndBackAgain);
   });
 
 })
