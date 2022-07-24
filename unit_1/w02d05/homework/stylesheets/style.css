@@ -109,7 +109,11 @@ li {
   margin: auto;
 }
 
+.the-white {
+  background-color: white;
+  border-color: grey;
 
+}
 /* aside {
   display: inline-block;
 } */
