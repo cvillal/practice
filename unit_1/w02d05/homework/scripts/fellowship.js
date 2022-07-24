@@ -295,10 +295,11 @@ const $divMordor = $('<div>').attr('id','mount-doom').appendTo('#Mordor')
 
 
   // 1. Create a div with an id of 'gollum' and add it to Mordor
-
+  const $div2Mordor = $('<div>').attr('id','gollum').appendTo('#Mordor')
   // 2. Move the ring from Frodo and give it to Gollum
-
+$('#Mordor').children().eq(2).children().appendTo('#gollum')
   // 3. Move Gollum into Mount Doom
+$('#gollum').appendTo('#mount-doom')
 
   // COMMIT YOUR WORK
   // The commit message should read: "Chapter 12 complete - Gollum is trying to get the ring".
