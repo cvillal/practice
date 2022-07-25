@@ -37,7 +37,7 @@ $(() => {
   // Chapter 1
   // ============
 
-
+const makeMiddleEarth = () => {
   // HINT: Make a console.log for each of your functions to make sure that, when you click, the correct function is being called!
 
   // 1. create a section tag with an id of middle-earth
@@ -58,7 +58,7 @@ $(() => {
   }
   }
   middleEarthLands();
-
+}
   //should look like this
 // {/* <section></section>
 //   <article id+lands></article>
@@ -83,7 +83,7 @@ $(() => {
   // Chapter 2
   // ============
 
-
+const makeHobbits = () => {
   // Goal: display an unordered list of hobbits in the shire (which is the first article tag on the page)
 
   // 1. create a 'ul'
@@ -99,6 +99,8 @@ const listHobbits = () => {
 }
 
 listHobbits()
+
+}
   // 3. also, give each hobbit (`li`) a class of "hobbit"
 
   // 4. append the ul to the shire
@@ -112,6 +114,7 @@ listHobbits()
   // Chapter 3
   // ============
 
+  const keepItSecretKeepItSafe = () => {
 //<li class="hobbit">FRODO<>
 //<div id = the-ring></div>
 
@@ -120,10 +123,13 @@ listHobbits()
 const $ringDiv = $('<div>').attr('id', 'the-ring')
 
 //.appendTo($landArticle.children[1])
+
   // 2. add the ring as a child of Frodo
   const $frodo = $('.hobbit')
   // console.log($frodo)
 $ringDiv.appendTo($frodo[0])
+
+  }
   
   //Section.article[1])
   // hint: Frodo does not have an id, but there is a command to retrieve all elements with a certain class. This should give you an array for you to access . . .
@@ -138,7 +144,7 @@ $ringDiv.appendTo($frodo[0])
   // ============
   // Chapter 4
   // ============
-
+const makeBaddies = () => {
   // 1. display an unordered list of baddies in Mordor
 const $mordorUl = $('<ul>')
 const $h1Mordor = $('#Mordor')
@@ -151,6 +157,8 @@ const listBaddies = () => {
 }
 
 listBaddies()
+
+}
   // 3. remember to append the ul to Mordor
 
   // 2. give each of the baddies a class of "baddy"
@@ -163,6 +171,7 @@ listBaddies()
   // Chapter 5
   // ============
 
+  const makeBuddies = () => {
 
   //   // 1. create an aside tag and append it to middle-earth below mordor
 const $asideTag = $('<aside>').appendTo('#middle-earth')
@@ -177,7 +186,7 @@ $buddiesUl.appendTo($asideTag)
   }
   
   listBuddies()
-
+  }
   //   // 3. give each of the buddies a class of "buddy"
 
   //   // 4. don't forget to append them to the aside
@@ -190,31 +199,32 @@ $buddiesUl.appendTo($asideTag)
   // // Chapter 6
   // // ============
 
+  const leaveTheShire = () => {
   //   // 1. grab the hobbits (the ul in which they reside) and move them to Rivendell
   //       // hint: the hobbits ul is a childNode of The-Shire-- there is way to get a list of childNodes
 
 $('#The-Shire').children().eq(1).appendTo("#Rivendell")
-
+  }
   // // COMMIT YOUR WORK
   // // The commit message should read: "Chapter 6 complete - Left the Shire"
 
   // // ============
   // // Chapter 7
   // // ============
-
+const beautifulStranger = () => {
 
   //   // 1. change the buddy 'Strider' text node to "Aragorn"
   //      // hint: You can get a list of elements by tag name, such as 'aside'
 $('.buddy').eq(3).text('Aragon')
-
+  
   // // COMMIT YOUR WORK
   // // The commit message should read: "Chapter 7 complete - Strider is changed to Aragorn"
-
+}
   // // ============
   // // Chapter 8
   // // ============
 
-
+const forgeTheFellowShip = () => {
   //   // 1. create a new div with an id 'the-fellowship'
 
   const $fellowshipDiv = $('<div>').attr('id', 'the-fellowship')
@@ -228,7 +238,7 @@ $fellowshipDiv.append($h1Fellowship).appendTo('#middle-earth')
   // 4. add the unordered lists of hobbits and buddies to 'the-fellowship'
 $('#Rivendell').children().eq(1).appendTo('#the-fellowship')
 $('aside').children().eq(0).appendTo('#the-fellowship')
-
+}
   // COMMIT YOUR WORK
   // The commit message should read: "Chapter 8 complete - The Fellowship is created"
 
@@ -236,11 +246,11 @@ $('aside').children().eq(0).appendTo('#the-fellowship')
   // Chapter 9
   // ============
 
-
+const theBalrog = () => {
   // 1. change the 'Gandalf' text to 'Gandalf the White'
 
   $('.buddy').eq(0).text('Gandalf the White').attr('class', 'the-white')
-
+}
   // 2. add a class "the-white" to this element
 
   // 3. in the style.css file, add a css rule to make elements of the class "the-white" have a white background and a grey border
@@ -262,7 +272,7 @@ $('aside').children().eq(0).appendTo('#the-fellowship')
 
   const hornOfGondor = () => {
     alert('horn of gondor has been blown');
-  }
+  
 
 //   hornOfGondor.on('DOMContentLoaded') () => {
 //     alert("horn of gondor has been blown");
@@ -274,21 +284,21 @@ $('.buddy').eq(4).css({textDecoration: 'line-through'});
   // 3. Tricky: Remove the Uruk-Hai from the Baddies on the page
 $('.baddy').eq(2).remove()  
 
-
+  }
   // COMMIT YOUR WORK
   // The commit message should read: "Chapter 10 complete - horn of gandor blew and Boromir is dead"
 
   // ============
   // Chapter 11
   // ============
-
+const itsDangerousToGoAlone = () => {
   // 1. take Frodo and Sam out of the fellowship and move them to Mordor (they don't need to be inside a ul in Mordor)
 
 $('.hobbit').eq(0).appendTo('#Mordor')
 $('.hobbit').eq(1).appendTo('#Mordor')
   // 2. add a div with id of 'mount-doom' to Mordor
 const $divMordor = $('<div>').attr('id','mount-doom').appendTo('#Mordor')
-
+}
   // COMMIT YOUR WORK
   // The commit message should read: "Chapter 11 complete - Sam and Frodo are in Mordor and Mount Doom has been created"
 
@@ -296,7 +306,7 @@ const $divMordor = $('<div>').attr('id','mount-doom').appendTo('#Mordor')
   // Chapter 12
   // ============
 
-
+const weWantsIt = () => {
   // 1. Create a div with an id of 'gollum' and add it to Mordor
   const $div2Mordor = $('<div>').attr('id','gollum').appendTo('#Mordor')
   // 2. Move the ring from Frodo and give it to Gollum
@@ -304,6 +314,7 @@ $('#Mordor').children().eq(2).children().appendTo('#gollum')
   // 3. Move Gollum into Mount Doom
 $('#gollum').appendTo('#mount-doom')
 
+}
   // COMMIT YOUR WORK
   // The commit message should read: "Chapter 12 complete - Gollum is trying to get the ring".
 
@@ -311,7 +322,7 @@ $('#gollum').appendTo('#mount-doom')
   // Chapter 13
   // ============
 
-
+const thereAndBackAgain = () => {
   // 1. remove Gollum and the Ring from the DOM
 
 $('#gollum').remove()
@@ -321,6 +332,8 @@ $('.baddy').remove()
 
   // 3. Move all the hobbits back to the shire
 $('.hobbit').appendTo('#The-Shire')
+
+}
   // COMMIT YOUR WORK
   // The commit message should read: "Chapter 13 complete -Gollum and the ring are gone, the baddies are done, and the hobbits are back in the shire".
 
@@ -336,19 +349,19 @@ $('.hobbit').appendTo('#The-Shire')
 
   $(() => {
 
-    // $('#1').on('click', makeMiddleEarth);
-    // $('#2').on('click', makeHobbits);
-    // $('#3').on('click', keepItSecretKeepItSafe);
-    // $('#4').on('click', makeBaddies);
-    // $('#5').on('click', makeBuddies);
-    // $('#6').on('click', leaveTheShire);
-    // $('#7').on('click', beautifulStranger);
-    // $('#8').on('click', forgeTheFellowShip);
-    // $('#9').on('click', theBalrog);
+    $('#1').on('click', makeMiddleEarth);
+    $('#2').on('click', makeHobbits);
+    $('#3').on('click', keepItSecretKeepItSafe);
+    $('#4').on('click', makeBaddies);
+    $('#5').on('click', makeBuddies);
+    $('#6').on('click', leaveTheShire);
+    $('#7').on('click', beautifulStranger);
+    $('#8').on('click', forgeTheFellowShip);
+    $('#9').on('click', theBalrog);
     $('#10').on('click', hornOfGondor);
-    // $('#11').on('click', itsDangerousToGoAlone);
-    // $('#12').on('click', weWantsIt);
-    // $('#13').on('click', thereAndBackAgain);
+    $('#11').on('click', itsDangerousToGoAlone);
+    $('#12').on('click', weWantsIt);
+    $('#13').on('click', thereAndBackAgain);
   });
 
 })
