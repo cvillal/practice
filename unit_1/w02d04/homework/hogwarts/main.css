@@ -1,7 +1,17 @@
 body {
-    background-color: #F8F7FF;
+    background-color: gold;
     text-align: center; 
 }/*or any color of your choosing*/
+#container {
+    text-align: center;
+
+
+}
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
 .owl{
     font-family: fantasy;
 }
@@ -14,11 +24,15 @@ li{
     list-style: none;
 }
 
-table{
+table {
     display: table;
     border-style: solid;
     border-color: gray;
-    border-width: 1px;
+    border: 1px;
     align-items: center;
 
+}
+
+.cabbage {
+    color: chartreuse;
 }
