@@ -47,7 +47,8 @@ app.get("/pub", (req, res) => {
 	// rendering the index
 	res.render("index.ejs", {
 		drinks: drinks,
-		food: food
+		food: food,
+		tabTitle: 'Home'
 	});
 });
 

@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
+        <%- include ('./partials/head.ejs') %>
     </head>
 
     <body>
         <div class="body-overlay">
             <!-- ============ HEADER ============ -->
             <header>
-                <h1>gitPub.io</h1>
-                <ul>
-                    <li><a href="/pub">master branch</a></li>
-                    <li><a href="/new">git add -an item</a></li>
-                </ul>
+                <%- include ('./partials/header.ejs') %>
             </header>
             <!-- ============ MAIN ============ -->
             <main class="show-main">
@@ -23,8 +20,7 @@
             </main>
             <!-- ============ FOOTER ============ -->
             <footer>
-                <span>℗ 2019</span>
-                <span>FORKED FRMO WANDA.</span>
+                <%- include ('./partials/footer.ejs') %>
             </footer>
         </div>
     </body>
