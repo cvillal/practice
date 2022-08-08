@@ -1,0 +1,113 @@
+.container{
+    display:flex;
+    background-color: black;
+    justify-content: space-evenly;
+    align-content: stretch;
+    flex-wrap: wrap;
+    border: 2px solid magenta;
+    width: 50%;
+    margin: auto;
+    /* overflow: scroll; */
+}
+#one{
+    background-color: white;
+    padding: .5em;
+    
+}
+#two{
+    background-color: yellow;
+    padding: 1em;
+} 
+
+#three{
+    background-color: red;
+    padding: 2.5em;
+}
+#four{
+    background-color: blue;
+    padding: 3em;
+}    
+
+#five {
+    background-color: yellow;
+    padding: .8em;
+}
+
+#six{
+    background-color: white;
+    padding:.8em;
+    justify-self: end;
+    align-self:stretch;
+    break-after: column;
+    position:sticky;
+    /* flex-wrap: wrap; */
+}
+#seven{
+    background-color: white;
+    padding: .5em;
+}
+#eight{
+    background-color: white;
+    padding: 1em;
+}
+#nine{
+    background-color: white;
+    padding: 2.5em;
+
+}
+#ten{
+    background-color: white;
+   padding: .6em;
+}
+#eleven{
+    background-color: red;
+    padding:1.8em;
+}
+#twelve{
+    background-color: blue;
+    padding.8em;
+}
+#thriteen{
+    background-color: white;
+    padding: .8em;
+}
+
+#fourteen{
+    background-color: white;
+    padding: 
+}
+
+#fifteen{
+    background-color: white;
+    padding: 
+}
+
+#sixteen{
+    background-color: blue;
+    
+}
+
+#seventeen{
+    background-color: white;
+   
+}
+#eighteen{
+    background-color: yellow;
+    
+}
+
+#nineteen{
+    background-color: red;
+    
+}
+#twenty{
+    background-color: yellow;
+    
+}
+#twentyone{
+    background-color: white;
+    
+}
+#twentytwo{
+    background-color: white;
+}
