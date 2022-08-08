@@ -17,15 +17,17 @@
 // *******************************************//
 
 // Dependencies
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+// Config
+const mongoURI = 'mongodb://localhost:27017/hotel'
+const db = mongoose.connection
+
 const { any } = require('webidl-conversions')
 
 const Hotel = require('./models/hotel.js')
 const hotelSeed = require('./models/seed.js')
 
-// Config
-const mongoURI = 'mongodb://localhost:27017/hotel'
-const db = mongoose.connection
+
 
 // Models
 
@@ -41,9 +43,23 @@ const db = mongoose.connection
 // db.on('disconnected', () => console.log('mongo disconnected'))
 
 /////////////////////////////////////////////////
+
+// Hotel.create(hotelSeed, (err, data) => {
+//   if (err) console.log(err.message)
+//   console.log('added provided hotel data')
+// })
+
+// Hotel.collection.drop()
+
+// Hotel.countDocuments({}, (err, data) => {
+//   if (err) console.log(err.message)
+//   console.log(`There are ${data} hotels in this database`)
+// })
+
+////////////////////////////////////
 // const myFirstHotel = {
-//   "name": "Hotel California",
-//   "location": "California",
+//   "name": "Hotel Carolina",
+//   "location": "North Carolina",
 //   "rating": 4,
 //   "vacancies": true,
 //   "rooms": [
@@ -76,13 +92,7 @@ const db = mongoose.connection
 //   })
 
 
-
-// Hotel.create(myFirstHotel, (err, data) => {
-//   if (err) console.log(err.message)
-//   console.log('added provided hotel data')
-// })
-
-// Hotel.find((err, hotels)=>{
+// Hotel.find({},(err, hotels)=>{
 //   console.log(hotels);
 //   db.close()
 //   })  
@@ -92,7 +102,7 @@ const db = mongoose.connection
 //     db.close()
 // })
 
-// Hotel.find({name:"Hotel California"}, (err, hotel) => {
+// Hotel.find({name:"Hotel Carolina"}, (err, hotel) => {
 //    console.log(hotel);
 //       db.close();
 // })
@@ -114,10 +124,15 @@ const db = mongoose.connection
 //   console.log(hotel);
 // })
 
-// Hotel.findOneAndUpdate({location:'White Bay, Oregon'},{rating: 5}, {new: true},(err, hotel)=>{
+// Hotel.findOneAndUpdate({name:The Great Northern'},{rating: 5}, {new: true},(err, hotel)=>{
 //     console.log(hotel);
 //     db.close()
 //   })
+
+// Hotel.update({name:The Great Northern'},{$set:{rating: 5}}, (err, hotel)=>{
+  //     console.log(hotel);
+  //     db.close()
+  //   })
 
   // Hotel.findOneAndUpdate({name:'Motel Bambi'},{vancacies: false}, {new: true},(err, hotel)=>{
   //   console.log(hotel);
@@ -128,12 +143,6 @@ const db = mongoose.connection
 //     console.log(hotel);
 //     db.close()
 //   })
-// Hotel.collection.drop()
-
-// Hotel.countDocuments({}, (err, data) => {
-//   if (err) console.log(err.message)
-//   console.log(`There are ${data} hotels in this database`)
-// })
 
 // *******************************************//
 // Everything provided to students end

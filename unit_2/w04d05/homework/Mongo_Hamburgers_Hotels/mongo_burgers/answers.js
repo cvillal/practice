@@ -102,7 +102,7 @@
 // { "_id" : ObjectId("62eeb6f44ffbbf061769205d"), "meat" : "veggie", "cheese" : false, "toppings" : [ "ketchup", "mustard", "tomatoes" ] }
 // > 
 
-// find the first burger with cheese
+// find the first burger with cheese db.burger.findOne({cheese:true})
 
 //i didnt make any with cheese...oops
 
@@ -159,6 +159,7 @@
 //   "ok": 1
 // }
 
+// db.dropDatabase()
 
 //
 // Bonus

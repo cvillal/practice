@@ -7,6 +7,7 @@
     border: 2px solid magenta;
     width: 50%;
     margin: auto;
+    flex-flow: row wrap;
     /* overflow: scroll; */
 }
 #one{
