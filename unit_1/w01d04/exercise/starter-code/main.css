@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* *{
     border: 1px solid gold;
 } */
@@ -13,10 +14,29 @@
     alignt-items: center;
 }
 .card{
+=======
+.flex-container {
+    display: flex;
+    background-color: #e9ece5;
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    overflow: scroll;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    
+}
+.card {
+>>>>>>> 5a0fb543ed104858c33f87b3fc827c2151926501
     color: white;
     background-color: #b3c2bf;
     padding: .5em;
     margin: .3em;
     flex-basis: 1em;
     text-align: center;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 5a0fb543ed104858c33f87b3fc827c2151926501

@@ -55,7 +55,8 @@ app.get("/pub", (req, res) => {
 // get drinks show individual
 app.get("/drinks/:id", (req, res) => {
 	res.render("showDrinks.ejs", {
-		drink: drinks[req.params.id]
+		drink: drinks[req.params.id],
+		tabTitle: 'Drinks'
 	});
 });
 
