@@ -16,6 +16,18 @@ app.use(express.static('public'))
 // })
 // })
 
+
+app.get('/budget/:id', (req, res) => {
+    Budget.findById(req.params.id, (err, chosenSection) =>{
+        res.render(
+            'show.ejs',
+            {
+                budget: chosenSection
+            }
+        )
+    })
+})
+
 app.get('/budget', (req, res) =>{
     Budget.find({}, (err, allBudget) => {
         res.render(
