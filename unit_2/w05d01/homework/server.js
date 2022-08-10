@@ -7,14 +7,24 @@ const app = express();
 app.use(express.urlencoded({extended:true}));
 app.use(express.static('public'))
 
-app.get('/budget/seed', (req, res) =>{
-    Budget.create(budgetSeed, (err, data) => {
-     res.send(data)
-    if (err) console.log(err.message)
-    console.log('added provided budget data')
-    res.redirect('/budget')
-})
+// app.get('/budget/seed', (req, res) =>{
+//     Budget.create(budgetSeed, (err, data) => {
+//      res.send(data)
+//     if (err) console.log(err.message)
+//     console.log('added provided budget data')
+//     res.redirect('/budget')
+// })
+// })
 
+app.get('/budget', (req, res) =>{
+    Budget.find({}, (err, allBudget) => {
+        res.render(
+            'index.ejs',
+            {
+                budget: allBudget
+            }
+        )
+    })
 })
 
 app.get('/budget', (req, res) => {
