@@ -8,14 +8,13 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.static('public'))
 
 // app.get('/budget/seed', (req, res) =>{
-//     Budget.create(budgetSeed, (err, data) => {
-//      res.send(data)
-//     if (err) console.log(err.message)
-//     console.log('added provided budget data')
+//     Budget.create(budgetSeed, (err, data) => {})
 //     res.redirect('/budget')
 // })
-// })
 
+app.get('/budget/new', (req, res) => {
+    res.render('new.ejs')
+})
 
 app.get('/budget/:id', (req, res) => {
     Budget.findById(req.params.id, (err, chosenSection) =>{

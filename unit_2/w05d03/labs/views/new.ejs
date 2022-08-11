@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="" async defer></script>
+        <title></title>
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    </head>
+    <body class="mx-auto" style="width: 200px;">
+      <h1>Add Supplies to your Backpack!</h1>
+      <nav>
+        <a href="/backpack"><button class="btn btn-outline-primary">back</button></a>
+    </nav>
+
+     <form action="/backpack" method="POST">
+        Name:<input type="text" name="name" placeholder="name" /> <br/>
+        Grade:<input type="number" name="grade" placeholder="grade"/> <br/>
+        Supplies: <input type="text" name="supplies" placeholder="supplies" /> <br/>
+        <input type="submit" value="Fill my backpack" class="btn btn-outline-success"/>
+     </form>
+        
+       
+    </body>
+</html>

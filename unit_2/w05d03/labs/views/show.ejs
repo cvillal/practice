@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="" async defer></script>
+        <title></title>
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    </head>
+    <body class="mx-auto" style="width: 200px;">
+        <h1>Backpack Contents</h1>
+        <div class="container">
+            <nav>
+                <a href="/backpack"><button class="btn btn-outline-primary">back</button></a>
+            </nav>
+            <h2 class="col-sm" ><%= backpack.name %> is starting <%= backpack.grade %> grade with: <br/>  <%= backpack.supplies %></h2>
+        </div>
+            
+        </ul>
+        <nav>
+            <a href="/backpack/<%= backpack._id%>/edit"><button class="btn btn-outline-warning">Edit your Backpack Here</button></a>
+        </nav>
+        
+    </body>
+</html>
