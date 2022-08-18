@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="" async defer></script>
+        <title></title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="">
+    </head>
+    <body class="mx-auto" style="width: 200px;">
+       <h1>My Closet!</h1>
+
+       <input type="text" placeholder="search for outfit">
+       
+       <nav>
+        <a href="/closet/new"><button class="btn btn-outline-success">Add More Outfits To My Closet</button></a>
+        </nav>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <ul>
+                    <% for(let i=0; i< closet.length; i++){ %>
+                        <div class="carousel-item active">
+                        <li>
+                            <a href="/closet/<%=closet[i]._id%>">
+                                <img src="<%=closet[i].image%>" height="200">
+                            </a>
+                        </li>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </button>
+                            <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </button>
+
+                        <nav>
+                            <a href="/closet/<%=closet[i]._id%>/edit">
+                                <button class="btn btn-outline-warning">Edit your Outfit Here</button>
+                            </a>
+                        </nav>
+                        <form action="/closet/<%= closet[i]._id%>?_method=DELETE" method="POST">
+                            <input type="submit" value="DELETE"class="btn btn-outline-danger"/>
+                        </form>
+                    <% } %>
+                </ul>
+            </div>   
+       </div>
+    </body>
+</html>
