@@ -4,63 +4,99 @@ import {useState} from 'react'
 import userEvent from '@testing-library/user-event';
 
 const App = () => {
-  const bakingTools = [{
-    name:'no bake pudding',
-    price: 0,
-    click: 1,
-  },{
-    name:'easy bake oven',
-    price: 5,
-    click: 5
-  },{
-    name: 'old toaster oven',
-    price: 25,
-    click:10
-  },{
-    name: 'convection oven',
-    price: 250,
-    click:2
-  },{
-    name: 'factory',
-    price: 500,
-    click:2
-  }]
-  
-  const baker = {
-    money: 0,
-    bakingTool: bakingTools[0],
-    income:1
-  }
-  
-  const bake = () => {
-    setIncome (money+income)
-    if (baker.income >= 1000) {
-      console.log('congrats you win')
-    }
-  }
-  
-  const [money, setMoney] = useState(0)
-  const [income, setIncome] = useState(1)
+  return(
+  <div>
+    <NoBakeComponent/>
+    <EasyBakeComponent/>
+    <OldToasterOvenComponent/>
+    <ConvectionOvenComponent/>
+    <FactoryComponent/>
+  </div>
+  )
 
-
-  return (
-    <div>
-     <h1>Bake Your Days Away</h1>
-     <h3>{bake}</h3>
-     <button onClick={() => setMoney(money + 1)}>no bake pudding</button>
-
-
-    </div>
-  );
 }
 
-const noBakeComponent = () => {
+const NoBakeComponent = () => {
+  const [money, setMoney] = useState(0)
+
+  if(money >=5){
+    alert('you can buy an easy bake oven now')
+  }
+
   return (
     <div className='nobake'>
+      <h3>{money}</h3>
       <button onClick={()=> setMoney(money+1)}>no bake pudding</button>
       
     </div>
   )
 }
+
+const EasyBakeComponent = () => {
+  const [money, setMoney] = useState(0)
+
+  if(money >=25){
+    alert('you can buy an old toaster oven now')
+  }
+
+  return (
+    <div className='nobake'>
+      <h3>{money}</h3>
+      <button onClick={()=> setMoney(money+5)}>easy bake oven</button>
+      
+    </div>
+  )
+}
+
+const OldToasterOvenComponent = () => {
+  const [money, setMoney] = useState(0)
+
+  if(money >=250){
+    alert('you can buy a convection oven now')
+  }
+
+  return (
+    <div className='nobake'>
+      <h3>{money}</h3>
+      <button onClick={()=> setMoney(money+25)}>old toaster oven</button>
+      
+    </div>
+  )
+}
+
+const ConvectionOvenComponent = () => {
+  const [money, setMoney] = useState(0)
+
+  if(money >=500){
+    alert('you can buy an old toaster oven now')
+  }
+
+  return (
+    <div className='nobake'>
+      <h3>{money}</h3>
+      <button onClick={()=> setMoney(money+250)}>convection oven</button>
+      
+    </div>
+  )
+}
+
+const FactoryComponent = () => {
+  const [money, setMoney] = useState(0)
+
+  if(money >=1000){
+    alert("You've made it! You win the Bake-off!")
+  }
+
+  return (
+    <div className='nobake'>
+      <h3>{money}</h3>
+      <button onClick={()=> setMoney(money+500)}>easy bake oven</button>
+      
+    </div>
+  )
+}
+
+
+
 
 export default App;
