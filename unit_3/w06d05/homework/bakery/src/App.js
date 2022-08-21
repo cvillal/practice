@@ -5,7 +5,7 @@ import userEvent from '@testing-library/user-event';
 
 const App = () => {
   return(
-  <div>
+  <div className='container'>
     <h1>Bake Your Days Away Game</h1>
     <NoBakeComponent/>
     <EasyBakeComponent/>
@@ -26,10 +26,10 @@ const NoBakeComponent = () => {
 
   return (
     <div className='nobake'>
-      <h2>Lucky you! You have the chance to start your bakery with <i>no bake pudding</i></h2>
+      <h2>Lucky you! You have the chance to start your bakery with<br></br><i>no bake pudding</i></h2>
       <h3>Ready...Set...Click to earn $$ for your next baking tool</h3>
       <h3>{money}</h3>
-      <button onClick={()=> setMoney(money+1)}>NO BAKE PUDDING</button>
+      <button className='button' onClick={()=> setMoney(money+1)}>NO BAKE PUDDING</button>
       
     </div>
   )
@@ -45,7 +45,7 @@ const EasyBakeComponent = () => {
   return (
     <div className='nobake'>
       <h3>{money}</h3>
-      <button onClick={()=> setMoney(money+5)}>EASY BAKE OVEN</button>
+      <button className='button' onClick={()=> setMoney(money+5)}>EASY BAKE OVEN</button>
       
     </div>
   )
@@ -61,7 +61,7 @@ const OldToasterOvenComponent = () => {
   return (
     <div className='nobake'>
       <h3>{money}</h3>
-      <button onClick={()=> setMoney(money+50)}>OLD TOASTER OVEN</button>
+      <button className='button' onClick={()=> setMoney(money+50)}>OLD TOASTER OVEN</button>
       
     </div>
   )
@@ -77,7 +77,7 @@ const ConvectionOvenComponent = () => {
   return (
     <div className='nobake'>
       <h3>{money}</h3>
-      <button onClick={()=> setMoney(money+100)}>CONVECTION OVEN</button>
+      <button className='button' onClick={()=> setMoney(money+100)}>CONVECTION OVEN</button>
       
     </div>
   )
@@ -93,7 +93,7 @@ const FactoryComponent = () => {
   return (
     <div className='nobake'>
       <h3>{money}</h3>
-      <button onClick={()=> setMoney(money+250)}>FACTORY</button>
+      <button className='button' onClick={()=> setMoney(money+250)}>FACTORY</button>
       
     </div>
   )
