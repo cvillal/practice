@@ -1,0 +1,46 @@
+.dissapear{
+  display: none;
+}
+#myDiv{
+  display: contents;
+ 
+}
+.mystyle{
+ visibility: hidden;
+ 
+}
+
+.container{
+  border: 2px solid rgb(160, 225, 29);
+  text-align: center;
+  background-color: rgba(234, 65, 234, 0.935);
+  font-family:fantasy;
+  border-radius: 50px;
+  padding: 2em;
+  margin: 2em;
+  color:  rgb(175, 246, 34);
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.button{
+  border-radius: 5px;
+  padding: 1em;
+  margin: 2px;
+  background-color: rgb(84, 182, 191);
+  color: antiquewhite;
+  font-weight: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 15px;
+}
+#q {
+  background-color: blueviolet;
+  border: 2px dotted rgb(160, 225, 29);
+  padding: 2em;
+}
+
+#color{
+  background-color: blueviolet;
+ border: 2px dotted rgb(160, 225, 29);
+ padding: 2em;
+}
