@@ -4,6 +4,7 @@ import {useState} from 'react'
 import userEvent from '@testing-library/user-event';
 
 const App = () => {
+  
   return(
   <div className='container'>
     <h1>Bake Your Days Away Game</h1>
@@ -17,6 +18,7 @@ const App = () => {
 
 }
 
+//COMPONENTS
 const NoBakeComponent = () => {
   const [money, setMoney] = useState(0)
 
