@@ -51,7 +51,7 @@ const App = () => {
     const handleDelete = (todoData) => {
       // console.log(todoData);
       axios
-          .delete('http://localhost:3000/todos/${todoData._id}')
+          .delete("http://localhost:3000/todos/"+ todoData._id)
           .then(() => {
             axios
               .get('http://localhost:3000/todos')
@@ -62,6 +62,24 @@ const App = () => {
     }
     
   
+    const handleToggleComplete = (todoData) => {
+      // console.log(todoData);
+        axios
+            .put(`http://localhost:3000/todos/${todoData._id}`,
+                {
+                  description:todoData.description,
+                  complete:!todoData.complete
+                }
+            )
+            .then(() => {
+              axios
+                  .get('http://localhost:3000/todos')
+                  .then((response) => {
+                    setTodos(response.data)
+                  })
+            })
+
+    }
 
 
       return(
@@ -80,7 +98,7 @@ const App = () => {
               <ul>
                 {
                   todos.map((todos) => {
-                    return <li key={todos.id}>
+                    return <li key={todos.id} onClick={(event) => {handleToggleComplete(todos)}}>
                       {
                         (todos.complete)?
                             <strike>{todos.description}</strike>
