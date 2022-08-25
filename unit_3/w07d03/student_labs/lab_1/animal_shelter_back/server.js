@@ -13,7 +13,7 @@ app.use(express.json())
 
 //Create Route - creates new animal card
 app.post('/animals', (req, res) => {
-    Animals.create(req.body, (err, createAnimal) => {
+    Animals.create(req.body, (err, createdAnimal) => {
         res.json(createdAnimal)
     })
 })
@@ -34,7 +34,7 @@ app.delete('/animals/:id', (req, res) => {
 })
 
 //Update Route - ubdates animals info submits updates made through edit on animal info
-add.put('/animals/:id', (req, res) => {
+app.put('/animals/:id', (req, res) => {
     Animals.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedAnimal) => {
         res.json(updatedAnimal)
     })
