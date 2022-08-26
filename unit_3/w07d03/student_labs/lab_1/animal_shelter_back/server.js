@@ -3,12 +3,13 @@ const express = require('express');
 const mongoose = require('mongoose');
 const Animals = require('./models/animals.js')
 const app = express();
+const cors = require('cors');
 
 
 
 //USE
 app.use(express.json())
-
+app.use(cors())
 //ROUTES
 
 //Create Route - creates new animal card
