@@ -16,21 +16,18 @@ const App = () => {
     
     //Functions/components?
 
+    //Fetch/get animal data
     const getAnimals = () => {
       axios.get('http://localhost:3000/animals').then((response) =>{
           
           setAnimals (response.data)
-        
-
+     
       });
     }
 
-    const reservedForAdoption = () =>{
-      if(reserved === false) {
-         getAnimals('')
-      }
-    }
+   
 
+    //On-Change
 
     const submitNewImage = (event) => {
         setNewImage(event.target.value);
@@ -45,6 +42,18 @@ const App = () => {
         setNewSpecies(event.target.value);
     }
 
+    const handleChangeAdoption = (event) => {
+      setUpForAdoption(event.target.value)
+    }
+
+    const reservedForAdoption = () =>{
+      if(reserved === false) {
+         getAnimals('')
+      }
+    }
+
+
+//post route?
 
     const createNewAnimalCard = (event) => {
       event.preventDefault();
@@ -67,12 +76,28 @@ const App = () => {
       })
   }
 
+//update
+
+const updateAnimal = (e, animal) =>{
+  event.preventDefault()
+  axios.put(`http://localhost:3000/animal/${animal._id}`),
+  {
+    image:newImage,
+    name:newName,
+    species:newSpecies,
+
+  }
+}
+
+
+
     //effect
     useEffect(() => {
       getAnimals()
     }, [])
 
-    const handleDelete = (animalData) => {
+    //delete
+    const handleDelete = (animal) => {
       // console.log(animalData);
       axios
           .delete("http://localhost:3000/animals/"+ animals._id)
