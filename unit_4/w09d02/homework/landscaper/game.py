@@ -1,30 +1,48 @@
 
-name = input('Whats your name?')
+# name = input('Whats your name?')
+# tools = [['teeth', 1, 0], ['rusty scissors', 5, 5], ['OT push lawnmower', 50, 25], ['BP lawnmower', 100, 250], ['starving students', 250, 500]]
+# for tool in tools:
+#         # print (tools)
 
-class Player:
-    def __init__(self, name, tool, money):
-        self.name = name
-        self.tool = tool
-        self.money = money
+#     print( tool[0])
+# money = (1, 5)
 
+# class Player:
+#     def __init__(self, name, tool, money):
+#         self.name = name
+#         self.tool = tool
+#         self.money = money
+
+#     def addMoney(Player):
+#         for money in self.money:
+#             print(money)
+
+    # def tools():
 class Tool:
-    def __init__(self, tool)
+    def __init__(self, name, price, makes):
         self.name = name
-        self.tool = tool[]
-
-tool= [
-    ['teeth', 'rusty scissors', 'OT push lawnmower', 'BP lawnmower', 'starvoing students'],
-    [1, 5, 50, 100, 250],
-    [0, 5, 25, 250, 500]
-    ]
-
-[ "teeth", "rusty scissors", "old timey lawnmower"]
+        self.price = price
+        self.makes = makes    
     
-# ]
+    # def wallet(self):
+        
 
-# def 
-# rusty_scissors = Tool()
+tool = Tool(['teeth', 'rusty scissors', 'OT push lawnmower', 'BP lawnmower', 'starving students'], [1, 5, 50, 100, 250],
+    [0, 5, 25, 250, 500])
 
-player = Player(name, 'teeth', "$1")
+print(tool.name[1])
 
-print(player)
+def cut():
+    
+
+# class Money(chooseTool):
+#     def __init__(self, income):
+#         super().__init__
+    
+
+# game = Player('caro', 'teeth', 1)
+
+# if tool.wallet >= 5:
+#             return ('you can buy rusty scissors')
+#         else:
+#             retun ('you need $5 to buy rusty scissors')
