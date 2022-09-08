@@ -28,7 +28,12 @@ SELECT * FROM COUNTRY LIMIT 1;
 carmen=# SELECT * FROM country WHERE region= 'Southern Europe' ORDER BY population ASC;
 Holy See (Vatican City State)
 
-
+or
+carmen=# SELECT name, population FROM country WHERE region = 'Southern Europe' ORDER BY population ASC LIMIT 1;
+        name              | population 
+-------------------------------+------------
+ Holy See (Vatican City State) |       1000
+(1 row)
 -- Clue #2: Now that we're here, we have insight that Carmen was seen attending language classes in this country's officially recognized language. Check our databases and find out what language is spoken in this country, so we can call in a translator to work with you.
 carmen=# SELECT language FROM countrylanguage WHERE countrycode ='VAT';
  language 
@@ -36,6 +41,12 @@ carmen=# SELECT language FROM countrylanguage WHERE countrycode ='VAT';
  Italian
 (1 row)
 
+or
+carmen=# SELECT name, language FROM country RIGHT JOIN countrylanguage ON country.code = countrylanguage.countrycode WHERE country.name = 'Holy See (Vatican City State)';
+             name              | language 
+-------------------------------+----------
+ Holy See (Vatican City State) | Italian
+(1 row)
 -- Clue #3: We have new news on the classes Carmen attended – our gumshoes tell us she's moved on to a different country, a country where people speak only the language she was learning. Find out which nearby country speaks nothing but that language.
 carmen=# SELECT * FROM countrylanguage WHERE language = 'Italian' AND isofficial=True;
  countrycode | language | isofficial | percentage 
@@ -52,6 +63,13 @@ carmen=# SELECT * FROM country WHERE code= 'SMR';
  SMR  | San Marino | Europe    | Southern Europe |          61 |       885 |      27000 |           81.1 | 510.00 |        | San Marino | Republic       |             |    3171 | SM
 (1 row)
 
+or
+carmen=# SELECT name, language, percentage FROM country RIGHT JOIN countrylanguage ON country.code = countrylanguage.countrycode WHERE countrylanguage.language = 'Italian' ORDER BY percentage DESC LIMIT 1;
+
+    name    | language | percentage 
+------------+----------+------------
+ San Marino | Italian  |        100
+(1 row)
 
 -- Clue #4: We're booking the first flight out – maybe we've actually got a chance to catch her this time. There are only two cities she could be flying to in the country. One is named the same as the country – that would be too obvious. We're following our gut on this one; find out what other city in that country she might be flying to.
 LINE 1: SELECT * FROM city WHERE code = 'SMR';
@@ -106,8 +124,31 @@ carmen=# SELECT name FROM city WHERE id = 211;
 
 
 -- We're counting on you, gumshoe. Find out where she's headed, send us the info, and we'll be sure to meet her at the gates with bells on.
+carmen=# SELECT name FROM city WHERE population = 91084; 
+     name     
+--------------
+ Santa Monica
+(1 row)
 
 
+-- She's in _____SANTA MONICA________!
 
 
--- She's in ____________________________!
+-- Hungry for more?
+
+-- Some of the entries have gotten a bit messed up. For example, the capital of Brazil is not Brasï¿½lia, rather, it is Brasília. Update this entry to the correct spelling. Record your update, in the find_carmen.sql file (below I found Carmen), and do a query for one row and copy paste it to show the update.
+carmen=# UPDATE city SET name = 'Brasilia' WHERE id = 211;
+UPDATE 1
+carmen=# SELECT name FROM city WHERE id=211;
+   name   
+----------
+ Brasilia
+(1 row)
+
+carmen=# SELECT name FROM city WHERE name LIKE '%Brasilia%';
+   name   
+----------
+ Brasilia
+(1 row)
+-- Update any other two entries that have gotten messed up.
+

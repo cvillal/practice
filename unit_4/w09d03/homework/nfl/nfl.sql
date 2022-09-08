@@ -169,17 +169,13 @@ nfl=# SELECT name, position FROM players WHERE salary > 10000000;
  Chris Long              | DE
 (21 rows)
 -- 9. The player with the highest salary in the NFL
-nfl=# SELECT name FROM players ORDER BY salary LIMIT 1;
-      name       
------------------
- Phillip Dillard
-(1 row)
--- 10. The name and position of the first 100 players with the lowest salaries
 nfl=# SELECT name FROM players ORDER BY salary DESC LIMIT 1;
       name      
 ----------------
  Peyton Manning
 (1 row)
+-- 10. The name and position of the first 100 players with the lowest salaries
+nfl=# SELECT name, salary FROM players ORDER BY salary ASC LIMIT 100;
 -- 11. The average salary for a DE in the nfl
 nfl=#  SELECT AVG(salary) FROM players WHERE position = 'DE';
          avg          
@@ -260,3 +256,4 @@ nfl=# SELECT SUM(players.salary) FROM players, teams WHERE players.team_id=teams
  74179466
 (1 row)
 -- 14. The player with the lowest salary on the Green Bay Packers
+nfl=# SELECT salary, players.name FROM players JOIN teams ON players.teams.id = teams.id WHERE teams.name = 'Green Bay Packers' ORDER BY salary ASC LIMIT 1;
