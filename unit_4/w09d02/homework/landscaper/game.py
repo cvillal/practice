@@ -8,14 +8,28 @@
 # money = (1, 5)
 
 # class Player:
-#     def __init__(self, name, tool, money):
+#     def __init__(self, name, tool, wallet, income):
 #         self.name = name
 #         self.tool = tool
+        # self.wallet = wallet
 #         self.money = money
+
+    def tool(self, tool, wallet):
+        self.tool = tools.pop()
 
 #     def addMoney(Player):
 #         for money in self.money:
 #             print(money)
+
+
+#funtionc to make the game run
+    def buy_tool():
+    
+    def action ():
+    
+    def show_status():
+
+
 
     # def tools():
 class Tool:
@@ -33,7 +47,7 @@ tool = Tool(['teeth', 'rusty scissors', 'OT push lawnmower', 'BP lawnmower', 'st
 print(tool.name[1])
 
 def cut():
-    
+
 
 # class Money(chooseTool):
 #     def __init__(self, income):

@@ -1,0 +1,15 @@
+CREATE DATABASE carolinavillalobos;
+CREATE DATABASE foo;
+DROP DATABASE foo;
+\l
+CREATE DATABASE foo;
+\l
+DROP DATABASE foo;
+\l
+CREATE DATABASE test_db;
+\l
+\connect test_db;
+\l
+CREATE TABLE foo (name varchar(20
+));
+\s foo
