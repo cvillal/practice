@@ -262,5 +262,5 @@
 1. Lastly, let's update the initial state of `Edit` to include the id of the person that we passed in:
 
     ```js
-    let emptyPerson = { id: props.id, name: '', age: '' }
+    const [person, setPerson] = useState({...props.person})
     ```
