@@ -14,9 +14,9 @@ There are no full day classes during project weeks, but we do expect you to be w
 
 There are **daily attendance checks on weekdays at 9:00AM EST and 2:00PM EST**. A thread will be posted in the classroom channel at those times and you must respond to it within 2 hours or you will be marked absent. _Again, failure to make an attendance check will result in an absence_.
 
-- **Nov 24th - Nov 26th**: This is your Thanksgiving holiday! There will be no attendance checks during this period.
-- **Tuesdays - Nov 23rd, Nov 30th, and Dec 7th**: There will be outcomes as usual at 3:30 PM EST
-- **Thursday Dec 9th**: Project presentation day! You're required to be in the class Zoom starting at 9:00 AM EST.
+- **Sep 19th - Oct 3rd**: This is your Thanksgiving holiday! There will be no attendance checks during this period.
+- **Wedbesdays - There will be outcomes as usual at 3:30 PM EST
+- **Monday Oct 3rd**: Project presentation day! You're required to be in the class Zoom starting at 9:00 AM EST.
 
 ## Requirements
 
@@ -132,9 +132,9 @@ ALSO, don't forget: a **technical demonstration** of your app which:
 
 ## How to Submit your Project
 
-Your project is due on **Thursday, December 9th at 9:00 am ET.** You will present your project and show your code to classmates and instructors.
+Your project is due on **Monday Oct 3rd, at 9:00 am ET.** You will present your project and show your code to classmates and instructors.
 
-Per usual, fill out your project information via the [google presentation sheet](https://docs.google.com/spreadsheets/d/1hZN3MkzYRg1XRHE8G_zv9EeY7iWltr75veqHobDWT1o/edit?usp=sharing). Remember this is the order in which you'll be presenting!
+Per usual, fill out your project information via the [google presentation sheet](https://docs.google.com/spreadsheets/d/1NDu6gZjNYr8xHoQTsAr8eC50XHOrtHrqfeyODFRSF1s/edit#gid=890219392). Remember this is the order in which you'll be presenting!
 
 ## Meetings with instructors
 
