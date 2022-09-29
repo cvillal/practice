@@ -51,7 +51,8 @@ const App = () => {
 
   return (
     <>
-        <h1>HELLO</h1>
+      <div className='container'>
+        <h1>My Lesson Planner</h1>
         <Add handleCreate={handleCreate}/>
         <div className='lessons'>
         {lessons.map((lesson) => {
@@ -64,11 +65,11 @@ const App = () => {
               {lesson.notes}</h5>
               <Edit handleUpdate={handleUpdate} id={lesson.id} />
               <button onClick={handleDelete} value={lesson.id}>X</button>
-        </div>
+            </div>
           )
-        })}
+         })}
         </div>
-
+        </div>
 
 
       
