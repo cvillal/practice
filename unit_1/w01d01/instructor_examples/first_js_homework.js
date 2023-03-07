@@ -28,7 +28,8 @@
 
 // SECTION 3
 
-
+// even and odd number find and then print accordingly
+// pyramid bc consoleloginside loop
 
 // let letters = ''
 // let i = 0
@@ -76,15 +77,18 @@
 //   q--
 //   // closes the while loop, the code inside this loop will keep running until the while condition is evaluated to false
 // }
-// let letters = 'A'
-// let i = 0
+let letters = 'A'
+let i = 0
 
-// while (i < 20) {
-//   letters += 'A'
-//   i++
-// }
+while (i < 20) {
+  letters += 'A'
+  i++
+  console.log(letters)
+}
 
-// console.log(letters)
+
+
+
 
 // why didnt it print a little pyramid looking answer adding an A each time?
 
